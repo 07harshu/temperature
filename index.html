@@ -20,7 +20,7 @@ oninput="CtoFConverter(this.value)" onchange="CtoFConverter(this.value)">
 <p>Fahrenheit: <span class="fahrenheit"></span></p>
 <script>
    function CtoFConverter(temp) {
-      document.querySelector(".fahrenheit").innerHTML=(temp-32)/1.8;
+      document.querySelector(".fahrenheit").innerHTML=(temp*1.8)+32;
    }
 </script>
 </body>
